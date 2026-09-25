@@ -193,15 +193,21 @@ html {
 @media (max-width: 768px) {
     .countries-header {
         grid-template-columns: 1fr;
-        gap: 32px;
+        gap: 28px;
     }
 
     .countries-photo {
-        max-width: 280px;
+        max-width: 100%;
+        text-align: center;
     }
 
     .author-photo {
-        max-width: 100%;
+        max-width: 170px;
+        margin: 0 auto;
+    }
+
+    .cv-line {
+        text-align: center;
     }
 }
 
