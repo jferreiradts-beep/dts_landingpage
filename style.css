@@ -167,6 +167,84 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Seção Experiência Internacional & Países */
+.countries-section {
+    padding: 100px 0 120px;
+    border-top: 1px solid var(--line);
+}
+
+.countries-header h2 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.countries-intro {
+    font-size: 1.25rem;
+    color: var(--muted);
+    max-width: 720px;
+    line-height: 1.7;
+    margin-bottom: 36px;
+}
+
+.clients-tag {
+    border-left: 2px solid var(--gold);
+    padding-left: 18px;
+    margin-bottom: 60px;
+}
+
+.clients-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    margin-bottom: 4px;
+}
+
+.clients-names {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 28px 24px;
+    border-top: 1px solid var(--line);
+    padding-top: 48px;
+}
+
+.country-item {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.country-num {
+    font-family: var(--font-serif);
+    color: var(--gold);
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+
+.country-name {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.countries-footer {
+    margin-top: 48px;
+    font-size: 1.1rem;
+    color: var(--muted);
+    font-style: italic;
+}
+
 /* Formulário de Contato */
 .contact-section {
     padding: 80px 0 120px;
