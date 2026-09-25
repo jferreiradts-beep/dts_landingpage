@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+
+    --bg: #f5f3ee;
+    --text: #1f2724;
+    --muted: #5e675f;
+    --gold: #ba8c3c;
+    --line: #ddd7ce;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: var(--bg);
+    color: var(--text);
+
+    font-family: var(--font-sans);
+
+    line-height: 1.7;
+}
+
+.container {
+
+    width: min(900px, 90%);
+    margin: 0 auto;
+}
+
+.hero {
+
+    padding: 100px 0;
+}
+
+.eyebrow {
+
+    color: var(--muted);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+h1 {
+
+    font-family: var(--font-serif);
+    font-weight: 400;
+
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.08;
+
+    margin-bottom: 30px;
+}
+
+.lead {
+
+    font-size: 1.5rem;
+    color: var(--muted);
+
+    max-width: 700px;
+
+    margin-bottom: 50px;
+}
+
+.hero p:last-of-type {
+
+    max-width: 760px;
+    font-size: 1.2rem;
+}
+
+.callout-box {
+    background: #eae3d5;
+    border-left: 3px solid #b05737;
+    padding: 30px 36px;
+    margin-top: 45px;
+    border-radius: 0 4px 4px 0;
+}
+
+.callout-label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #b05737;
+    margin-bottom: 14px;
+}
+
+.callout-box p {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--text);
+    max-width: 100%;
+}
+
+.steps {
+
+    padding-bottom: 120px;
+}
+
+.step {
+
+    display: grid;
+    grid-template-columns: 80px 1fr;
+
+    gap: 40px;
+
+    border-top: 1px solid var(--line);
+
+    padding: 50px 0;
+}
+
+.number {
+
+    color: var(--gold);
+
+    font-family: var(--font-serif);
+    font-size: 3rem;
+}
+
+.step h2 {
+
+    font-family: var(--font-serif);
+    font-weight: 400;
+
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.step p {
+
+    max-width: 650px;
+}
+
+.whatsapp {
+
+    position: fixed;
+
+    right: 24px;
+    bottom: 24px;
+
+    background: #2d3a35;
+
+    color: white;
+    text-decoration: none;
+
+    padding: 14px 22px;
+    border-radius: 999px;
+
+    font-size: 0.95rem;
+
+    transition: 0.2s ease;
+}
+
+.whatsapp:hover {
+
+    background: #394842;
+}
+
+/* Rolagem suave para navegação */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Formulário de Contato */
+.contact-section {
+    padding: 80px 0 120px;
+    border-top: 1px solid var(--line);
+}
+
+.contact-section h2 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--text);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #b05737;
+    box-shadow: 0 0 0 3px rgba(176, 87, 55, 0.12);
+}
+
+.submit-btn {
+    align-self: flex-start;
+    background: #2d3a35;
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 999px;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.submit-btn:hover {
+    background: #394842;
+    transform: translateY(-1px);
+}
