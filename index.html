@@ -46,10 +46,10 @@
             <div class="callout-box">
                 <span class="callout-label">PARA QUÊ SERVE</span>
                 <p>
-                    Aumentar a concertação entre atores locais, ajudar a resolver conflitos e
-                    aproximar a assistência técnica a pequenos empresários —
-                    particularmente agricultores familiares — da organização de cadeias de
-                    valor e da estruturação de oportunidades de mercado.
+                    Ajudar agricultores, pequenos empresários, organizações de apoio
+                    e outros atores locais a transformar oportunidades em projetos viáveis,
+                    articulando conhecimento, especialização institucional e diferentes visões
+                    sobre o território.
                 </p>
             </div>
 
@@ -237,19 +237,19 @@
     </a>
 
     <script>
-    (function () {
-        if (sessionStorage.getItem('lang-chosen')) return;
-        sessionStorage.setItem('lang-chosen', '1');
+        (function () {
+            if (sessionStorage.getItem('lang-chosen')) return;
+            sessionStorage.setItem('lang-chosen', '1');
 
-        var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+            var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
 
-        if (lang.indexOf('es') === 0) {
-            location.replace('es/index.html');
-        } else if (lang.indexOf('en') === 0) {
-            location.replace('en/index.html');
-        }
-        // default: stay on PT
-    })();
+            if (lang.indexOf('es') === 0) {
+                location.replace('es/index.html');
+            } else if (lang.indexOf('en') === 0) {
+                location.replace('en/index.html');
+            }
+            // default: stay on PT
+        })();
     </script>
 
 </body>
